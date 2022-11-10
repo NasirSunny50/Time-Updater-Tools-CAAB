@@ -57,7 +57,7 @@ try:
                 UPDATE SFS_VALIDTRANSACTIONDATETIME SET VTDENDTIME=? WHERE VTDBRANCHCODE='0007' AND VTDTRANSDATE=?
         """
         update = [
-            [cur_time[:23], max_date]
+            [cur_time[:23], max_date[:23]]
         ]
     except Exception:
         messagebox.showerror('TimeUpdater','Date already exists!')
