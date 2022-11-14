@@ -13,10 +13,10 @@ cur_time = now.strftime('%m/%d/%Y %H:%M:%S.%f')
 
 
 DRIVER = 'ODBC Driver 17 for SQL Server'
-SERVER_NAME = '192.168.1.10'
-DATABASE_NAME = 'CAAB_AFS_DB'
-USER = 'titcaab'
-PW = 'titcaab321'
+SERVER_NAME = '********'
+DATABASE_NAME = '********'
+USER = '*******'
+PW = '*******'
 
 conn_string = f"""
     Driver={{{DRIVER}}};
